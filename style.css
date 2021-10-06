@@ -9,6 +9,16 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+
+.ham{
+    color: black;
+    display: none;
+}
+
+.top-nav{
+    display: flex;
+    flex-direction: column;
     padding: 15px;
     box-shadow: 10px 5px 5px rgb(204, 202, 202);
 }
@@ -19,6 +29,36 @@ nav{
     align-items: center;
     justify-content: center;
     margin-top: 15px;
+}
+
+.vertical {
+    transition: 1s;
+}
+
+.vertical-navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    transition: 1s;
+}
+
+.vertical-navbar > li{
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 1000px){
+    .vertical-navbar{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .vertical-navbar{
+        display: none;
+    }
 }
 
 .image > img{
@@ -32,6 +72,10 @@ nav{
 @media only screen and (max-width: 800px){
     .navbar{
         display: none;
+    }
+
+    .ham{
+        display: inline;
     }
 }
 
@@ -63,7 +107,7 @@ nav{
 }
 
 .container{
-    width: 100vw;
+    width: 90vw;
     margin: auto;
 }
 
